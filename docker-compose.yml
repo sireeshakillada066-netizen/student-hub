@@ -1,0 +1,15 @@
+services:
+
+  blue:
+    image: python:3.11
+    container_name: student-blue
+    command: python -m http.server 5001
+    ports:
+      - "5001:8000"
+
+  green:
+    image: python:3.11
+    container_name: student-green
+    command: python -m http.server 5002
+    ports:
+      - "5002:8000"
